@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+
+namespace PLTW
+
+{
+    public class BranchingAndOutput
+    {
+        public static bool answer;
+        public static string texts;
+        public static string texts2;
+        public static void Main(string[] args)
+        {
+             List<int> intList = new List<int>{2,3};   
+            intList.Add(1);
+            Console.WriteLine(intList.Count);
+            
+            List<string> strList = new List<string>();
+            strList.Add("Hello");
+            strList.Add("World");
+            strList.ForEach(i => Console.WriteLine(i));
+
+            intList.Remove(1);
+            
+            if (intList.Count >= 3)
+            {
+                Console.WriteLine("A");
+            }
+            else
+            {
+                Console.WriteLine("B");
+            }
+            Text("I like cherry nyan cat pie.");
+        }
+
+        public static void Text(String textSet)
+        {
+            texts = textSet;
+            Console.WriteLine(texts);
+            if (texts.Contains("pie"))
+            {
+                texts2 = "Found";
+            }
+            else
+            {
+                texts2 = "Not Found";
+            }
+            Console.WriteLine(texts2);
+        }
+    }
+}
+   
