@@ -1,0 +1,51 @@
+using System;
+using System.Collections.Generic;
+
+namespace PLTW
+
+{
+internal class Strings
+{
+    public static void Main(string[] args)
+    {
+        string str = "I search on google.";
+        
+        //takes first "o" in str
+        char o = str[14];
+        Console.WriteLine(o);
+        
+        //takes "search on google." from str
+        string str2 = str.Substring(2,17);
+        Console.WriteLine(str2);
+        
+        //adds "Please " to start of str2
+        string str3 = "Please " + str2;
+        Console.WriteLine(str3);
+
+        if (str3.Contains("google"))
+        {
+            Console.WriteLine("Bing is better.");
+        }
+        else
+        {
+            Console.WriteLine("Google is king.");
+        }
+
+
+
+        string test = Console.ReadLine();
+        List<char> characters = new List<char>();
+        
+        char A = test[0];
+        char B = test[1];
+        char C = test[2];
+        
+        characters.Add(A);
+        characters.Add(B);
+        characters.Add(C);
+        
+        characters.ForEach(i => Console.WriteLine(i));
+
+    }
+}
+}
