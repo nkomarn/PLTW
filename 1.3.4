@@ -1,0 +1,76 @@
+using System;
+using System.Collections.Generic;
+
+namespace PLTW
+
+{
+internal class NestedBranchingAndInput
+{
+    public static string text;
+    public static float FLOAT;
+    public static int INT;
+    public static Random rnd;
+    public static int RanNum;
+    public static void Main(string[] args)
+    {
+      Console.WriteLine("Enter Text");
+       text = Console.ReadLine();
+      Console.WriteLine(text);
+        
+        if (text.Contains("1"))
+        {
+            FLOAT = 1f;
+        }
+        else if (text.Contains("2"))
+        {
+            FLOAT = 2f;
+        }
+        else if (text.Contains("3"))
+        {
+            FLOAT = 3f;
+        }
+        else if (text.Contains("4"))
+        {
+            FLOAT = 4f;
+        }
+        else if (text.Contains("5"))
+        {
+            FLOAT = 5f;
+        }
+        else if (text.Contains("6"))
+        {
+            FLOAT = 6f;
+        }
+        else if (text.Contains("7"))
+        {
+            FLOAT = 7f;
+        }
+        else if (text.Contains("8"))
+        {
+            FLOAT = 8f;
+        }
+        else if (text.Contains("9"))
+        {
+            FLOAT = 9f;
+        }
+        else
+        {
+            FLOAT = 0f;
+        }
+
+        Console.WriteLine(FLOAT);
+
+        INT = (int) FLOAT;
+        
+        Console.WriteLine(INT);
+
+        rnd = new Random();
+
+        RanNum = rnd.Next(0, 10);
+        
+        Console.WriteLine(RanNum);
+    }
+    
+    
+}
+}
