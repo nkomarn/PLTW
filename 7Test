@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace PLTW
+
+{
+internal class ForLoops
+{
+    public static void Main(string[] args)
+    {
+        for (int i = 10; i > 0; i--)
+        {
+            Console.WriteLine(i);
+        }
+        
+        Console.WriteLine("next");
+        
+        IEnumerable<int> cubes = Enumerable.Range(0, 10).Select(x => x * x * x);
+        foreach (int b in cubes)
+        {
+            Console.WriteLine(b);
+        }
+    }
+}
+}
