@@ -1,0 +1,20 @@
+using System;
+ using System.Collections.Generic;
+ using System.Data;
+ 
+ namespace ConsoleApplication
+ {
+     internal class Program
+     {
+         public static void Main(string[] args)
+         {
+             int value = 27;
+             int i;
+             while ((i = value) >= 0)
+             {
+                 Console.WriteLine("While {0} {1}", i, value - 2);
+                 value--;
+             }
+         }
+     }
+ }
