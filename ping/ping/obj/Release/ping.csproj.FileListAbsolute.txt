@@ -1,0 +1,9 @@
+C:\Users\iansc\source\repos\ping\ping\bin\Release\ping.exe.config
+C:\Users\iansc\source\repos\ping\ping\bin\Release\ping.exe
+C:\Users\iansc\source\repos\ping\ping\bin\Release\ping.pdb
+C:\Users\iansc\source\repos\ping\ping\obj\Release\ping.Form1.resources
+C:\Users\iansc\source\repos\ping\ping\obj\Release\ping.Properties.Resources.resources
+C:\Users\iansc\source\repos\ping\ping\obj\Release\ping.csproj.GenerateResource.Cache
+C:\Users\iansc\source\repos\ping\ping\obj\Release\ping.csproj.CoreCompileInputs.cache
+C:\Users\iansc\source\repos\ping\ping\obj\Release\ping.exe
+C:\Users\iansc\source\repos\ping\ping\obj\Release\ping.pdb

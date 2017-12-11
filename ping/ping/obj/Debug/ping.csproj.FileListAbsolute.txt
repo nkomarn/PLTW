@@ -1,0 +1,10 @@
+C:\Users\iansc\source\repos\ping\ping\obj\Debug\ping.csprojResolveAssemblyReference.cache
+C:\Users\iansc\source\repos\ping\ping\obj\Debug\ping.Form1.resources
+C:\Users\iansc\source\repos\ping\ping\obj\Debug\ping.Properties.Resources.resources
+C:\Users\iansc\source\repos\ping\ping\obj\Debug\ping.csproj.GenerateResource.Cache
+C:\Users\iansc\source\repos\ping\ping\obj\Debug\ping.csproj.CoreCompileInputs.cache
+C:\Users\iansc\source\repos\ping\ping\bin\Debug\ping.exe.config
+C:\Users\iansc\source\repos\ping\ping\bin\Debug\ping.exe
+C:\Users\iansc\source\repos\ping\ping\bin\Debug\ping.pdb
+C:\Users\iansc\source\repos\ping\ping\obj\Debug\ping.exe
+C:\Users\iansc\source\repos\ping\ping\obj\Debug\ping.pdb
