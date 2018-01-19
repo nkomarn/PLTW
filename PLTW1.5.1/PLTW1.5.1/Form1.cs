@@ -8,21 +8,44 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
+
+
+//
+//
+//Change meeasge box language with switch
+//Clear button
+//
+//
+//
+//
+//
+//
+//
+//
+
 namespace PLTW1._5._1
 {
     public partial class Form1 : Form
     {
         public Form1()
         {
-            
+
 
             InitializeComponent();
-            
+
             pictureBox1.MouseDoubleClick += new MouseEventHandler(pickPic);
             button1.MouseClick += new MouseEventHandler(helpMenu);
             button2.MouseClick += new MouseEventHandler(helpMenuClose);
             button7.MouseClick += new MouseEventHandler(applyText);
+            button8.MouseClick += new MouseEventHandler(clearButton);
             pic = (Bitmap)pictureBox1.Image;
+            if (textBox1.TextLength >= 33) {
+                MessageBox.Show("You can only enter up to 33 Characters.");
+                textBox1.Text = textBox1.Text.Substring(0, 33);
+
+            }
         }
         Bitmap pic;
         System.IO.StreamReader sr;
@@ -41,11 +64,11 @@ namespace PLTW1._5._1
                     MessageBox.Show("The file you chose was not an image!");
 
                 }
-                
+
                 sr.Close();
             }
 
-            
+
         }
 
         public void helpMenu(object sender, MouseEventArgs e) {
@@ -184,16 +207,37 @@ namespace PLTW1._5._1
             }
         }
         Graphics g;
-        RectangleF top = new RectangleF(5, 25, 650, 120);
-        RectangleF bottom = new RectangleF(5, 450, 650, 120);
+        RectangleF top;
+        RectangleF bottom;
         Bitmap pic2;
         public void applyText(object sender, MouseEventArgs e) {
+            if (textBox1.TextLength >= 33)
+            {
+                MessageBox.Show("You can only enter up to 33 Characters in Top Text.");
+                textBox1.Text = textBox1.Text.Substring(0, 33);
+
+            }
+            if (textBox2.TextLength >= 33)
+            {
+
+                MessageBox.Show("You can only enter up to 33 Characters in Bottom Text.");
+                textBox2.Text = textBox2.Text.Substring(0, 33);
+
+            }
+            top = new RectangleF(5, 20, 550, 300);
+            bottom = new RectangleF(5, 450, 550, 300);
             pic2 = (Bitmap)pictureBox1.Image;
-            g = Graphics.FromImage(pic);
-            
-            g.DrawString(textBox1.Text, new Font("Palatino Linotype", 100), Brushes.White, top);
-            g.DrawString(textBox2.Text, new Font("Palatino Linotype", 100), Brushes.White, bottom);
+            g = Graphics.FromImage(pic2);
+
+            g.DrawString(textBox1.Text, new Font("Palatino Linotype", 60), Brushes.White, top);
+            g.DrawString(textBox2.Text, new Font("Palatino Linotype", 60), Brushes.White, bottom);
             g.Flush();
+
+            pictureBox1.Image = pic2;
+        }
+        public void clearButton(object sender, MouseEventArgs e){
+            
+            
 
             pictureBox1.Image = pic;
         }
